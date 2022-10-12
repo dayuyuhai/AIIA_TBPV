@@ -1,0 +1,569 @@
+2022-07-22 18:44:17.048263: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Using /data_b/zyt/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data_b/zyt/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/2] c++ -MMD -MF torchac_backend.o.d -DTORCH_EXTENSION_NAME=torchac_backend -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -isystem /data_b/zyt/anaconda3/envs/TBPV3/lib/python3.6/site-packages/torch/include -isystem /data_b/zyt/anaconda3/envs/TBPV3/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -isystem /data_b/zyt/anaconda3/envs/TBPV3/lib/python3.6/site-packages/torch/include/TH -isystem /data_b/zyt/anaconda3/envs/TBPV3/lib/python3.6/site-packages/torch/include/THC -isystem /data_b/zyt/anaconda3/envs/TBPV3/include/python3.6m -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++14 -c /data_b/zyt/anaconda3/envs/TBPV3/lib/python3.6/site-packages/torchac/backend/torchac_backend.cpp -o torchac_backend.o 
+[2/2] c++ torchac_backend.o -shared -L/data_b/zyt/anaconda3/envs/TBPV3/lib/python3.6/site-packages/torch/lib -lc10 -ltorch_cpu -ltorch -ltorch_python -o torchac_backend.so
+Loading extension module torchac_backend...
+partition_octree function took 3681.126 ms
+pc length,height, width: 32 32 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G0_lres32/best_model.pt
+pc length,height, width: 32 64 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G1_lres32/best_model.pt
+pc length,height, width: 32 96 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G2_lres32/best_model.pt
+pc length,height, width: 32 128 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G3_lres32/best_model.pt
+pc length,height, width: 32 160 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G4_lres32/best_model.pt
+pc length,height, width: 32 192 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G5_lres32/best_model.pt
+pc length,height, width: 32 224 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G6_lres32/best_model.pt
+pc length,height, width: 32 256 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G7_lres32/best_model.pt
+pc length,height, width: 16 16 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G0_lres16/best_model.pt
+pc length,height, width: 16 32 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G1_lres16/best_model.pt
+pc length,height, width: 16 48 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G2_lres16/best_model.pt
+pc length,height, width: 16 64 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G3_lres16/best_model.pt
+pc length,height, width: 16 80 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G4_lres16/best_model.pt
+pc length,height, width: 16 96 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G5_lres16/best_model.pt
+pc length,height, width: 16 112 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G6_lres16/best_model.pt
+pc length,height, width: 16 128 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G7_lres16/best_model.pt
+pc length,height, width: 8 8 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G0_lres8/best_model.pt
+pc length,height, width: 8 16 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G1_lres8/best_model.pt
+pc length,height, width: 8 24 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G2_lres8/best_model.pt
+pc length,height, width: 8 32 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G3_lres8/best_model.pt
+pc length,height, width: 8 40 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G4_lres8/best_model.pt
+pc length,height, width: 8 48 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G5_lres8/best_model.pt
+pc length,height, width: 8 56 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G6_lres8/best_model.pt
+pc length,height, width: 8 64 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G7_lres8/best_model.pt
+Sucessfully loaded  24  models
+Encoding  198  blocks 
+Encoded file:  ./datasets_bp/MPEG/10bitdepth/train/longdress_vox10_1052.ply
+Encoding time:  143.6477930545807
+Occupied Voxels: 775745
+Blocks bitstream:  Output/longdress_vox10_1052/tbpv/blocks.bin
+Baseblock bitstream:  Output/longdress_vox10_1052/tbpv/baseblocks.bin
+Metadata bitstream Output/longdress_vox10_1052/tbpv/metadata.bin
+Encoding information:  Output/longdress_vox10_1052/tbpv/heatmap.pkl
+Average bits per occupied voxels: 4.3999
+Percent of base level: 0.0042
+Total file size:  3413232
+
+2022-08-26 09:48:54.898688: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Using /data_b/zyt/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data_b/zyt/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module torchac_backend...
+partition_octree function took 6127.317 ms
+pc length,height, width: 32 32 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G0_lres32/best_model.pt
+pc length,height, width: 32 64 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G1_lres32/best_model.pt
+pc length,height, width: 32 96 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G2_lres32/best_model.pt
+pc length,height, width: 32 128 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G3_lres32/best_model.pt
+pc length,height, width: 32 160 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G4_lres32/best_model.pt
+pc length,height, width: 32 192 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G5_lres32/best_model.pt
+pc length,height, width: 32 224 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G6_lres32/best_model.pt
+pc length,height, width: 32 256 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G7_lres32/best_model.pt
+pc length,height, width: 16 16 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G0_lres16/best_model.pt
+pc length,height, width: 16 32 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G1_lres16/best_model.pt
+pc length,height, width: 16 48 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G2_lres16/best_model.pt
+pc length,height, width: 16 64 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G3_lres16/best_model.pt
+pc length,height, width: 16 80 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G4_lres16/best_model.pt
+pc length,height, width: 16 96 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G5_lres16/best_model.pt
+pc length,height, width: 16 112 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G6_lres16/best_model.pt
+pc length,height, width: 16 128 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G7_lres16/best_model.pt
+pc length,height, width: 8 8 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G0_lres8/best_model.pt
+pc length,height, width: 8 16 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G1_lres8/best_model.pt
+pc length,height, width: 8 24 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G2_lres8/best_model.pt
+pc length,height, width: 8 32 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G3_lres8/best_model.pt
+pc length,height, width: 8 40 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G4_lres8/best_model.pt
+pc length,height, width: 8 48 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G5_lres8/best_model.pt
+pc length,height, width: 8 56 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G6_lres8/best_model.pt
+pc length,height, width: 8 64 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G7_lres8/best_model.pt
+Sucessfully loaded  24  models
+Encoding  268  blocks 
+Encoded file:  ./datasets_bp/Microsoft/10bitdepth/train/frame0004.ply
+Encoding time:  213.1054425239563
+Occupied Voxels: 1293000
+Blocks bitstream:  Output/frame0004/tbpv/blocks.bin
+Baseblock bitstream:  Output/frame0004/tbpv/baseblocks.bin
+Metadata bitstream Output/frame0004/tbpv/metadata.bin
+Encoding information:  Output/frame0004/tbpv/heatmap.pkl
+Average bits per occupied voxels: 2.8621
+Percent of base level: 0.0051
+Total file size:  3700736
+
+
+2022-08-26 10:36:40.275236: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Using /data_b/zyt/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data_b/zyt/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module torchac_backend...
+partition_octree function took 4335.670 ms
+Model/MSVoxelCNN/G0_lres32/best_model.pt
+Model/MSVoxelCNN/G1_lres32/best_model.pt
+Model/MSVoxelCNN/G2_lres32/best_model.pt
+Model/MSVoxelCNN/G3_lres32/best_model.pt
+Model/MSVoxelCNN/G4_lres32/best_model.pt
+Model/MSVoxelCNN/G5_lres32/best_model.pt
+Model/MSVoxelCNN/G6_lres32/best_model.pt
+Model/MSVoxelCNN/G7_lres32/best_model.pt
+Model/MSVoxelCNN/G0_lres16/best_model.pt
+Model/MSVoxelCNN/G1_lres16/best_model.pt
+Model/MSVoxelCNN/G2_lres16/best_model.pt
+Model/MSVoxelCNN/G3_lres16/best_model.pt
+Model/MSVoxelCNN/G4_lres16/best_model.pt
+Model/MSVoxelCNN/G5_lres16/best_model.pt
+Model/MSVoxelCNN/G6_lres16/best_model.pt
+Model/MSVoxelCNN/G7_lres16/best_model.pt
+Model/MSVoxelCNN/G0_lres8/best_model.pt
+Model/MSVoxelCNN/G1_lres8/best_model.pt
+Model/MSVoxelCNN/G2_lres8/best_model.pt
+Model/MSVoxelCNN/G3_lres8/best_model.pt
+Model/MSVoxelCNN/G4_lres8/best_model.pt
+Model/MSVoxelCNN/G5_lres8/best_model.pt
+Model/MSVoxelCNN/G6_lres8/best_model.pt
+Model/MSVoxelCNN/G7_lres8/best_model.pt
+Sucessfully loaded  24  models
+Encoding  198  blocks 
+Encoded file:  ./datasets_bp/MPEG/10bitdepth/train/longdress_vox10_1052.ply
+Encoding time:  84.8267183303833
+Occupied Voxels: 775745
+Blocks bitstream:  Output/longdress_vox10_1052/msvxdnn/blocks.bin
+Baseblock bitstream:  Output/longdress_vox10_1052/msvxdnn/baseblocks.bin
+Metadata bitstream Output/longdress_vox10_1052/msvxdnn/metadata.bin
+Encoding information:  Output/longdress_vox10_1052/msvxdnn/heatmap.pkl
+Average bits per occupied voxels: 0.8534
+Percent of base level: 0.0219
+Total file size:  662016
+
+
+
+
+2022-08-26 09:48:54.898688: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Using /data_b/zyt/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data_b/zyt/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module torchac_backend...
+partition_octree function took 6127.317 ms
+pc length,height, width: 32 32 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G0_lres32/best_model.pt
+pc length,height, width: 32 64 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G1_lres32/best_model.pt
+pc length,height, width: 32 96 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G2_lres32/best_model.pt
+pc length,height, width: 32 128 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G3_lres32/best_model.pt
+pc length,height, width: 32 160 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G4_lres32/best_model.pt
+pc length,height, width: 32 192 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G5_lres32/best_model.pt
+pc length,height, width: 32 224 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G6_lres32/best_model.pt
+pc length,height, width: 32 256 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G7_lres32/best_model.pt
+pc length,height, width: 16 16 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G0_lres16/best_model.pt
+pc length,height, width: 16 32 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G1_lres16/best_model.pt
+pc length,height, width: 16 48 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G2_lres16/best_model.pt
+pc length,height, width: 16 64 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G3_lres16/best_model.pt
+pc length,height, width: 16 80 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G4_lres16/best_model.pt
+pc length,height, width: 16 96 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G5_lres16/best_model.pt
+pc length,height, width: 16 112 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G6_lres16/best_model.pt
+pc length,height, width: 16 128 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G7_lres16/best_model.pt
+pc length,height, width: 8 8 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G0_lres8/best_model.pt
+pc length,height, width: 8 16 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G1_lres8/best_model.pt
+pc length,height, width: 8 24 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G2_lres8/best_model.pt
+pc length,height, width: 8 32 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G3_lres8/best_model.pt
+pc length,height, width: 8 40 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G4_lres8/best_model.pt
+pc length,height, width: 8 48 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G5_lres8/best_model.pt
+pc length,height, width: 8 56 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G6_lres8/best_model.pt
+pc length,height, width: 8 64 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G7_lres8/best_model.pt
+Sucessfully loaded  24  models
+Encoding  268  blocks 
+Encoded file:  ./datasets_bp/Microsoft/10bitdepth/train/frame0004.ply
+Encoding time:  213.1054425239563
+Occupied Voxels: 1293000
+Blocks bitstream:  Output/frame0004/tbpv/blocks.bin
+Baseblock bitstream:  Output/frame0004/tbpv/baseblocks.bin
+Metadata bitstream Output/frame0004/tbpv/metadata.bin
+Encoding information:  Output/frame0004/tbpv/heatmap.pkl
+Average bits per occupied voxels: 2.8621
+Percent of base level: 0.0051
+Total file size:  3700736
+
+
+2022-08-26 10:56:45.504444: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Using /data_b/zyt/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data_b/zyt/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module torchac_backend...
+partition_octree function took 5387.486 ms
+pc length,height, width: 32 32 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G0_lres32/best_model.pt
+pc length,height, width: 32 64 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G1_lres32/best_model.pt
+pc length,height, width: 32 96 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G2_lres32/best_model.pt
+pc length,height, width: 32 128 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G3_lres32/best_model.pt
+pc length,height, width: 32 160 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G4_lres32/best_model.pt
+pc length,height, width: 32 192 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G5_lres32/best_model.pt
+pc length,height, width: 32 224 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G6_lres32/best_model.pt
+pc length,height, width: 32 256 32
+patch length, height, width:  32 32 32
+Model/TBPVoxel/G7_lres32/best_model.pt
+pc length,height, width: 16 16 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G0_lres16/best_model.pt
+pc length,height, width: 16 32 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G1_lres16/best_model.pt
+pc length,height, width: 16 48 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G2_lres16/best_model.pt
+pc length,height, width: 16 64 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G3_lres16/best_model.pt
+pc length,height, width: 16 80 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G4_lres16/best_model.pt
+pc length,height, width: 16 96 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G5_lres16/best_model.pt
+pc length,height, width: 16 112 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G6_lres16/best_model.pt
+pc length,height, width: 16 128 16
+patch length, height, width:  16 16 16
+Model/TBPVoxel/G7_lres16/best_model.pt
+pc length,height, width: 8 8 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G0_lres8/best_model.pt
+pc length,height, width: 8 16 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G1_lres8/best_model.pt
+pc length,height, width: 8 24 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G2_lres8/best_model.pt
+pc length,height, width: 8 32 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G3_lres8/best_model.pt
+pc length,height, width: 8 40 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G4_lres8/best_model.pt
+pc length,height, width: 8 48 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G5_lres8/best_model.pt
+pc length,height, width: 8 56 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G6_lres8/best_model.pt
+pc length,height, width: 8 64 8
+patch length, height, width:  8 8 8
+Model/TBPVoxel/G7_lres8/best_model.pt
+Sucessfully loaded  24  models
+Encoding  214  blocks 
+Encoded file:  ./datasets_bp/Microsoft/10bitdepth/train/frame0110.ply
+Encoding time:  59.90646314620972
+Occupied Voxels: 1000493
+Blocks bitstream:  Output/frame0110/tbpv/blocks.bin
+Baseblock bitstream:  Output/frame0110/tbpv/baseblocks.bin
+Metadata bitstream Output/frame0110/tbpv/metadata.bin
+Encoding information:  Output/frame0110/tbpv/heatmap.pkl
+Average bits per occupied voxels: 3.6012
+Percent of base level: 0.0042
+Total file size:  3603016
+
+
+
+
+
+
+(TBPV3) zyt@server244:~/MSVoxelDNN-master$ python3 -m  ms_voxel_dnn_coder.ms_voxel_dnn_encoder -level 10 -depth 3 -ply ./datasets_bp/MPEG/10bitdepth/train/longdress_vox10_1052.ply -output Output/ -signaling msvxdnn -model Model/MSVoxelCNN/ -model8 ./Model/voxelDNNBL8_tf0/
+2022-08-26 10:36:40.275236: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Using /data_b/zyt/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data_b/zyt/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module torchac_backend...
+partition_octree function took 4335.670 ms
+Model/MSVoxelCNN/G0_lres32/best_model.pt
+Model/MSVoxelCNN/G1_lres32/best_model.pt
+Model/MSVoxelCNN/G2_lres32/best_model.pt
+Model/MSVoxelCNN/G3_lres32/best_model.pt
+Model/MSVoxelCNN/G4_lres32/best_model.pt
+Model/MSVoxelCNN/G5_lres32/best_model.pt
+Model/MSVoxelCNN/G6_lres32/best_model.pt
+Model/MSVoxelCNN/G7_lres32/best_model.pt
+Model/MSVoxelCNN/G0_lres16/best_model.pt
+Model/MSVoxelCNN/G1_lres16/best_model.pt
+Model/MSVoxelCNN/G2_lres16/best_model.pt
+Model/MSVoxelCNN/G3_lres16/best_model.pt
+Model/MSVoxelCNN/G4_lres16/best_model.pt
+Model/MSVoxelCNN/G5_lres16/best_model.pt
+Model/MSVoxelCNN/G6_lres16/best_model.pt
+Model/MSVoxelCNN/G7_lres16/best_model.pt
+Model/MSVoxelCNN/G0_lres8/best_model.pt
+Model/MSVoxelCNN/G1_lres8/best_model.pt
+Model/MSVoxelCNN/G2_lres8/best_model.pt
+Model/MSVoxelCNN/G3_lres8/best_model.pt
+Model/MSVoxelCNN/G4_lres8/best_model.pt
+Model/MSVoxelCNN/G5_lres8/best_model.pt
+Model/MSVoxelCNN/G6_lres8/best_model.pt
+Model/MSVoxelCNN/G7_lres8/best_model.pt
+Sucessfully loaded  24  models
+Encoding  198  blocks 
+Encoded file:  ./datasets_bp/MPEG/10bitdepth/train/longdress_vox10_1052.ply
+Encoding time:  84.8267183303833
+Occupied Voxels: 775745
+Blocks bitstream:  Output/longdress_vox10_1052/msvxdnn/blocks.bin
+Baseblock bitstream:  Output/longdress_vox10_1052/msvxdnn/baseblocks.bin
+Metadata bitstream Output/longdress_vox10_1052/msvxdnn/metadata.bin
+Encoding information:  Output/longdress_vox10_1052/msvxdnn/heatmap.pkl
+Average bits per occupied voxels: 0.8534
+Percent of base level: 0.0219
+Total file size:  662016
+
+
+
+
+2022-08-26 10:43:57.454273: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Using /data_b/zyt/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data_b/zyt/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module torchac_backend...
+partition_octree function took 7486.950 ms
+Model/MSVoxelCNN/G0_lres32/best_model.pt
+Model/MSVoxelCNN/G1_lres32/best_model.pt
+Model/MSVoxelCNN/G2_lres32/best_model.pt
+Model/MSVoxelCNN/G3_lres32/best_model.pt
+Model/MSVoxelCNN/G4_lres32/best_model.pt
+Model/MSVoxelCNN/G5_lres32/best_model.pt
+Model/MSVoxelCNN/G6_lres32/best_model.pt
+Model/MSVoxelCNN/G7_lres32/best_model.pt
+Model/MSVoxelCNN/G0_lres16/best_model.pt
+Model/MSVoxelCNN/G1_lres16/best_model.pt
+Model/MSVoxelCNN/G2_lres16/best_model.pt
+Model/MSVoxelCNN/G3_lres16/best_model.pt
+Model/MSVoxelCNN/G4_lres16/best_model.pt
+Model/MSVoxelCNN/G5_lres16/best_model.pt
+Model/MSVoxelCNN/G6_lres16/best_model.pt
+Model/MSVoxelCNN/G7_lres16/best_model.pt
+Model/MSVoxelCNN/G0_lres8/best_model.pt
+Model/MSVoxelCNN/G1_lres8/best_model.pt
+Model/MSVoxelCNN/G2_lres8/best_model.pt
+Model/MSVoxelCNN/G3_lres8/best_model.pt
+Model/MSVoxelCNN/G4_lres8/best_model.pt
+Model/MSVoxelCNN/G5_lres8/best_model.pt
+Model/MSVoxelCNN/G6_lres8/best_model.pt
+Model/MSVoxelCNN/G7_lres8/best_model.pt
+Sucessfully loaded  24  models
+Encoding  268  blocks 
+Encoded file:  ./datasets_bp/Microsoft/10bitdepth/train/frame0004.ply
+Encoding time:  107.14422178268433
+Occupied Voxels: 1293000
+Blocks bitstream:  Output/frame0004/msvxdnn/blocks.bin
+Baseblock bitstream:  Output/frame0004/msvxdnn/baseblocks.bin
+Metadata bitstream Output/frame0004/msvxdnn/metadata.bin
+Encoding information:  Output/frame0004/msvxdnn/heatmap.pkl
+Average bits per occupied voxels: 1.0295
+Percent of base level: 0.0142
+Total file size:  1331208
+
+
+
+
+2022-08-26 11:05:49.385669: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Using /data_b/zyt/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data_b/zyt/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module torchac_backend...
+partition_octree function took 5714.958 ms
+Model/MSVoxelCNN/G0_lres32/best_model.pt
+Model/MSVoxelCNN/G1_lres32/best_model.pt
+Model/MSVoxelCNN/G2_lres32/best_model.pt
+Model/MSVoxelCNN/G3_lres32/best_model.pt
+Model/MSVoxelCNN/G4_lres32/best_model.pt
+Model/MSVoxelCNN/G5_lres32/best_model.pt
+Model/MSVoxelCNN/G6_lres32/best_model.pt
+Model/MSVoxelCNN/G7_lres32/best_model.pt
+Model/MSVoxelCNN/G0_lres16/best_model.pt
+Model/MSVoxelCNN/G1_lres16/best_model.pt
+Model/MSVoxelCNN/G2_lres16/best_model.pt
+Model/MSVoxelCNN/G3_lres16/best_model.pt
+Model/MSVoxelCNN/G4_lres16/best_model.pt
+Model/MSVoxelCNN/G5_lres16/best_model.pt
+Model/MSVoxelCNN/G6_lres16/best_model.pt
+Model/MSVoxelCNN/G7_lres16/best_model.pt
+Model/MSVoxelCNN/G0_lres8/best_model.pt
+Model/MSVoxelCNN/G1_lres8/best_model.pt
+Model/MSVoxelCNN/G2_lres8/best_model.pt
+Model/MSVoxelCNN/G3_lres8/best_model.pt
+Model/MSVoxelCNN/G4_lres8/best_model.pt
+Model/MSVoxelCNN/G5_lres8/best_model.pt
+Model/MSVoxelCNN/G6_lres8/best_model.pt
+Model/MSVoxelCNN/G7_lres8/best_model.pt
+Sucessfully loaded  24  models
+Encoding  214  blocks 
+Encoded file:  ./datasets_bp/Microsoft/10bitdepth/train/frame0110.ply
+Encoding time:  88.39637160301208
+Occupied Voxels: 1000493
+Blocks bitstream:  Output/frame0110/msvxdnn/blocks.bin
+Baseblock bitstream:  Output/frame0110/msvxdnn/baseblocks.bin
+Metadata bitstream Output/frame0110/msvxdnn/metadata.bin
+Encoding information:  Output/frame0110/msvxdnn/heatmap.pkl
+Average bits per occupied voxels: 0.9805
+Percent of base level: 0.0153
+Total file size:  980936
